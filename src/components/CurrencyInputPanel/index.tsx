@@ -131,6 +131,9 @@ const StyledDropDown = styled(DropDown)<{ selected: boolean }>`
 const StyledTokenName = styled.span<{ active?: boolean }>`
   ${({ active }) => (active ? '  margin: 0 0.25rem 0 0.25rem;' : '  margin: 0 0.25rem 0 0.25rem;')}
   font-size: 20px;
+  @media (max-width: 425px) {
+    font-size: 16px;
+  }
 `
 
 const StyledBalanceMax = styled.button<{ disabled?: boolean }>`
